@@ -24,4 +24,4 @@ export const count1Provider = () => {
 };
 
 type Count1providerType = ReturnType< typeof count1Provider >;
-export const count1providerKey: InjectionKey<Count1StateType> = Symbol("count1Provider");
+export const count1providerKey: InjectionKey<Count1providerType> = Symbol("count1Provider");
