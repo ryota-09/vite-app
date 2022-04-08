@@ -3,20 +3,22 @@ import { count1StoreKey } from "@/providers/useCount1provider";
 import { inject } from "vue";
 const count1Store = inject(count1StoreKey);
 
-if(!count1Store){
-  throw new Error("")
+if (!count1Store) {
+  throw new Error("");
 }
-
 </script>
 
 <template>
   <br />
   <p>Countエリア</p>
   <p>(1つめのプロバイダーを利用)</p>
-  <br />
-  <button type="button" v-on:click="count1Store.decrement">-</button>
-  <span>count1の値 : <span class="count1">{{ count1Store.count1 }}</span></span>
-  <button type="button" v-on:click="count1Store.increment">+</button>
+  <el-space wrap>
+    <el-button type="info" v-on:click="count1Store.decrement">-</el-button>
+    <span
+      >count1の値 : <span class="count1">{{ count1Store.count1 }}</span></span
+    >
+    <el-button type="warning" v-on:click="count1Store.increment">+</el-button>
+  </el-space>
 </template>
 
 <style scoped>

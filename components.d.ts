@@ -6,7 +6,12 @@ declare module 'vue' {
   export interface GlobalComponents {
     AnotherCount: typeof import('./src/components/AnotherCount.vue')['default']
     Count: typeof import('./src/components/Count.vue')['default']
+    ElButton: typeof import('element-plus/es')['ElButton']
+    ElDivider: typeof import('element-plus/es')['ElDivider']
+    ElIcon: typeof import('element-plus/es')['ElIcon']
+    ElLink: typeof import('element-plus/es')['ElLink']
     ElScrollbar: typeof import('element-plus/es')['ElScrollbar']
+    ElSpace: typeof import('element-plus/es')['ElSpace']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     IconCommunity: typeof import('./src/components/icons/IconCommunity.vue')['default']
     IconDocumentation: typeof import('./src/components/icons/IconDocumentation.vue')['default']
