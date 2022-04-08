@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router";
-import Counter1Provider from "./Counter1Provider.vue";
+import CountProvider from "./CountProvider.vue";
 </script>
 
 <template>
-  <Counter1Provider>
+  <CountProvider>
     <RouterView />
-  </Counter1Provider>
+  </CountProvider>
 </template>
 <style>
 @import "@/assets/base.css";

@@ -4,6 +4,7 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    AnotherCount: typeof import('./src/components/AnotherCount.vue')['default']
     Count: typeof import('./src/components/Count.vue')['default']
     ElScrollbar: typeof import('element-plus/es')['ElScrollbar']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']

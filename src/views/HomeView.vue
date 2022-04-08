@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import Count from "@/components/Count.vue"
+import Count from "@/components/Count.vue";
+import AnotherCount from "@/components/AnotherCount.vue"
 
 </script>
 
@@ -9,4 +10,7 @@ import Count from "@/components/Count.vue"
     <br>
     <!-- コンポーネントはインストールするだけでOK -->
     <Count />
+    <br>
+    <br>
+    <AnotherCount />
 </template>

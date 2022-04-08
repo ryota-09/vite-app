@@ -4,7 +4,7 @@ type Count1StateType = {
   count1: number;
   isEven: boolean;
 };
-export const count1Store = () => {
+export const useCount1Store = () => {
   const count1State = reactive<Count1StateType>({
     count1: 0,
     isEven: true,
@@ -23,5 +23,5 @@ export const count1Store = () => {
   return { ...toRefs(count1State), increment, decrement };
 };
 
-type Count1StoreType = ReturnType< typeof count1Store >;
-export const count1StoreKey: InjectionKey<Count1StoreType> = Symbol("count1Store");
+type Count1StoreType = ReturnType< typeof useCount1Store >;
+export const count1StoreKey: InjectionKey<Count1StoreType> = Symbol("useCount1Store");

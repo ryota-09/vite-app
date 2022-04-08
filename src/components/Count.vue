@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { count1StoreKey } from "@/providers/count1provider";
+import { count1StoreKey } from "@/providers/useCount1provider";
 import { inject } from "vue";
 const count1Store = inject(count1StoreKey);
 
@@ -12,6 +12,7 @@ if(!count1Store){
 <template>
   <br />
   <p>Countエリア</p>
+  <p>(1つめのプロバイダーを利用)</p>
   <br />
   <button type="button" v-on:click="count1Store.decrement">-</button>
   <span>count1の値 : <span class="count1">{{ count1Store.count1 }}</span></span>
